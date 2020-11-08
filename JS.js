@@ -113,7 +113,7 @@ gsap.to(".scroll",{
                         start: "bottom 30%", // when the top of the trigger hits the top of the viewport
                         end: "+=100px", // end after scrolling 500px beyond the start
                         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                        markers: true,
+                        // markers: true,
                       },
                       opacity:0,
                       x:-500,  
@@ -287,7 +287,7 @@ gsap.to(".scroll",{
                                                  start: "bottom 80%", // when the top of the trigger hits the top of the viewport
                                                  end: "center center", // end after scrolling 500px beyond the start
                                                 scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                                                markers: true,
+                                                // markers: true,
                                                 toggleActions: "play none none none"
                                                 
                                               },
