@@ -1,0 +1,674 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+*
+  box-sizing: border-box
+  
+  
+
+body
+  margin: 0
+  font-family: Arial, Helvetica, sans-serif
+  overflow-x: hidden
+  font-family: 'cwTeXYen', serif !important
+  scroll-behavior: smooth
+  background: url(img/01.png)
+  background-attachment: fixed
+  
+
+body::-webkit-scrollbar
+  display: none
+
+#navbar
+  overflow: hidden
+  background-color: transparent
+  padding: 20px 10px
+  transition: 1s ease
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 100
+
+  a
+    float: left
+    color: #fff
+    padding-left: 30px
+    padding-right: 10px
+    text-decoration: none
+    font-size: 21px
+    line-height: 25px
+
+  #logo
+    font-size: 35px
+    font-weight: bold
+    transition: 0.4s
+
+  a
+    &:hover
+      background-color: transparent
+      color: #aaa
+
+
+#navbar-right
+  float: right
+
+@media screen and (max-width: 580px)
+  #navbar
+    padding: 20px 10px !important
+
+    a
+      float: none
+      display: block
+      text-align: left
+
+  #navbar-right
+    float: none
+
+.main
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    background-attachment: fixed
+    z-index: 99
+    
+
+.foresea
+    position: absolute
+    display: inline
+    z-index: 99
+    top: 40%
+    left: 8%
+    animation: foresea  6s ease-in-out normal 
+
+@keyframes foresea
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
+.whale
+    position: absolute
+    display: inline
+    right: 0%
+    bottom: 0%
+    opacity: 100
+    // animation: whale  4s ease-in-out normal 
+    // animation-fill-mode: forwards
+
+@keyframes whale
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
+.boat
+    position: absolute
+    display: inline
+    right: 30%
+    top: 40%
+    opacity: 100
+    overflow: hidden
+    z-index: 99
+    animation: boat  6s ease-in-out alternate
+    animation-fill-mode: forwards
+
+
+@keyframes boat
+  0%
+    opacity: 0
+    right: 20%
+    top: 50%
+
+  100%
+    opacity: 100
+    top: 40%
+    right: 30%
+    
+
+.trash
+    position: absolute
+    display: inline
+    right: 0%
+    bottom: 0%
+    opacity: 100
+    animation: trash  4s ease-in-out alternate infinite
+    animation-delay: 5s
+
+@keyframes trash
+  0%
+    opacity: 0
+  100%
+    opacity: 100
+
+.top
+  position: fixed
+  bottom: -15%
+  right: -5%
+
+#scroll a
+  padding-top: 70px
+
+  span
+    position: absolute
+    top: 0
+    left: 50%
+    width: 24px
+    height: 24px
+    margin-left: -12px
+    border-left: 1px solid #fff
+    border-bottom: 1px solid #fff
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    -webkit-animation: sdb05 1.5s infinite
+    animation: sdb05 1.5s infinite
+    box-sizing: border-box
+
+@-webkit-keyframes sdb05
+  0%
+    -webkit-transform: rotate(-45deg) translate(0, 0)
+    opacity: 0
+
+  50%
+    opacity: 1
+
+  100%
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px)
+    opacity: 0
+
+@keyframes sdb05
+  0%
+    transform: rotate(-45deg) translate(0, 0)
+    opacity: 0
+
+  50%
+    opacity: 1
+
+  100%
+    transform: rotate(-45deg) translate(-20px, 20px)
+    opacity: 0
+
+.demo a
+  position: absolute
+  bottom: 20px
+  left: 50%
+  z-index: 2
+  display: inline-block
+  -webkit-transform: translate(0, -50%)
+  transform: translate(0, -50%)
+  color: #fff
+  font: normal 400 16px/1 'Josefin Sans', sans-serif
+  letter-spacing: .1em
+  text-decoration: none
+  transition: opacity .3s
+
+//   &:hover
+//     opacity: .5
+
+
+.main2
+    width: 100vw
+    height: 3000px
+    position: relative
+    
+
+.allbox
+    display: flex
+    flex-direction: column
+    width: 900px
+    height: 3000px
+    margin: 0 auto
+
+.box1
+    flex: 1
+    position: relative
+    width: 100%
+    height: 500px
+    // border: 2px white solid
+
+.title01, .title02
+  position: absolute
+  font-size: 5.5em
+  letter-spacing: 14px
+  color:#ecd8a1
+  font-weight: 600
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.3)
+  margin-top: -10%
+
+.title03
+  position: absolute
+  font-size: 4.5em
+  letter-spacing: 14px
+  color:#ecd8a1
+  font-weight: 600
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.3)
+  margin-top: -10%
+
+
+.intro01, .intro02
+  position: absolute
+  font-size: 1.2em
+  color:#ecd8a1
+  font-weight: 400
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1)
+  margin-top: 20%
+  margin-left: 2%
+
+.intro03
+  position: absolute
+  font-size: 1.2em
+  color:#ecd8a1
+  font-weight: 400
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1)
+  margin-top: 20%
+  margin-left: 2%
+
+.big >p
+  color: #ecd8a1
+  font-size: 5em
+  font-weight: 800
+
+.box2, .box3, .box4, .box5, .box6
+    flex: 1
+    position: relative
+    width: 100%
+    height: 500px
+    margin-top: 150px
+    // border: 2px red solid
+
+.big, .big3, .big5
+    position: relative
+    width: 650px
+    height: 350px
+    top: 10%
+    left: 5%
+    margin-bottom: 300px
+
+    
+
+.small
+    position: absolute
+    width: 450px
+    height: 350px
+    top: 40%
+    left: 60%
+    z-index: 99
+    border-radius: 10px
+
+
+.small >a
+    position: absolute
+    bottom: 5%
+    right: 8%
+    color: #ecd8a1
+
+
+.big2, .big4, .big6
+    position: relative
+    width: 650px
+    height: 350px
+    top: 10%
+    left: 20%
+    margin-bottom: 300px
+    // background-color: #fff
+    // border-radius: 20px
+
+.small2
+    position: absolute
+    width: 450px
+    height: 250px
+    top: 40%
+    left: 0%
+    // background-color: #aaa
+    z-index: 99
+
+.box1fish
+  position: absolute
+  display: inline
+  left: -15%
+  top: 0%
+  opacity: 1
+
+.box1table
+  position: absolute
+  display: inline
+  left: -2%
+  top: 20%
+  z-index: -50
+  
+.box1chop
+  position: absolute
+  display: inline
+  left: 65%
+  top: 60%
+  z-index: -50
+
+.box1poison
+  position: absolute
+  display: inline
+  left: -5%
+  top: 5%
+  transform: scale(0.5)
+  z-index: 99
+  animation: main5 1.2s ease-in-out infinite alternate
+
+
+.box1poison2
+  position: absolute
+  display: inline
+  left: 30%
+  top: 25%
+  transform: scale(0.3)
+  transform: rotate(60deg)
+  z-index: 99
+  animation: main5 1.2s ease-in-out infinite alternate
+  
+  @keyframes main5
+    from
+      transform: scale(1.1, 1)
+
+    to
+      transform: scale(1, 1.1)
+
+.box2sea
+  position: absolute
+  display: inline
+  top: 50%
+  right: 0%
+  z-index: -80
+
+.box2boat
+  position: absolute
+  display: inline
+  top: -40%
+  right: 0%
+  z-index: 50
+
+.box2net
+  position: absolute
+  display: inline
+  top: 8%
+  left: -2%
+  z-index: 70
+
+.box2fish
+  position: absolute
+  display: inline
+  top: 80%
+  left: 65%
+  z-index: 60
+
+.box2fish2
+  position: absolute
+  display: inline
+  top: 70%
+  left: 10%
+  z-index: 60
+
+.box3water
+  position: absolute
+  display: inline
+  left: -30%
+
+.box3turn
+  position: absolute
+  display: inline
+  left: -25.5%
+  top: -29%
+
+.main3
+    width: 100vw
+    height: 100vh
+    // background-color: #24444f
+    position: relative
+    background-attachment: fixed
+
+.mission1
+  position: fixed
+  left: 10%
+  bottom: 10%
+  z-index: 99
+  opacity: 0
+    
+
+.main3 >p
+    color: #fff
+    font-size: 1.5em
+    position: absolute
+    top: 15%
+    left: 10%
+    line-height: 36px
+
+
+.flexslider
+    position: absolute
+    left: 55%
+    top: 20%
+
+.main3 >a
+    position: absolute
+    color: #fff
+    font-size: 3em
+    top: 60%
+    left: 15%
+    text-decoration: none
+
+    &:hover
+        color: #aaa
+
+.preload
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100vh
+  background-color: #0A233F
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: opacity 1s ease
+  z-index: 100 !important
+
+.preload-finish
+  opacity: 0
+  pointer-events: none
+
+.whale1
+  width: 200px
+  height: 100px
+  animation: whale1 1s ease infinite alternate
+@keyframes whale1
+  from
+    transform: translateY(0px)
+
+  to
+    transform: translateY(10px)
+
+.main3 >img
+  position: absolute
+  bottom: 0%
+
+.bottompic
+  position: absolute
+  bottom: 0%
+
+.girl
+  position: absolute
+  left: 8%
+  top: 55%
+  z-index: 99
+
+.main4
+  position: relative
+  width: 100vw
+  height: 70vh
+  background-color: #fefefe
+
+h2
+  position: absolute
+  font-size: 130px
+  display: inline
+  margin-top:3.5%
+  margin-left:3%
+  font-weight: 500
+  color: #494949
+  // color: #fff
+  z-index: 100
+  // border: 2px #000 solid
+
+.main4 >img
+  position: absolute
+
+.main4 >p
+  position: absolute
+  font-size: 1.3em
+  display: inline
+  left: 36%
+  top: 8%
+  line-height: 36px
+  z-index: 100
+
+.member
+  display: flex
+  align-items: center
+  width: 1300px
+  height: 250px
+  left: 10%
+  justify-content: space-around
+  // justify-content: center
+  position: relative
+  top: 45%
+  // border: 2px #000 solid
+
+.top-white
+  position: absolute
+  z-index: 50
+  top: -40%
+
+
+.mp1
+  margin-left: 15%
+  // border: 2px #000 solid
+
+.c1
+  width: 350px
+  margin: 0 auto
+  // border: 2px #000 solid
+
+.c1 >p
+  font-size: 28px
+
+.footer
+  background-color: #aaa
+  width: 100vw
+  height: 30vh
+  position: relative
+
+.footer-text
+  font-family: 'cwTeXYen', serif !important
+  position: center
+  margin: 0 auto
+  color: #fff
+  letter-spacing: 8px
+  line-height: 26px
+
+.facebook
+  position: absolute
+  width: 20%
+  margin: 0 auto
+
+
+.small> img
+  position: absolute
+  margin: 15px
+
+
+.playbtn
+  display: -webkit-box
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  flex-flow: column
+  margin-left: 25%
+  margin-top: -10%
+  width: 300px
+  height: 100px
+  
+
+  a
+    width: 100%
+    max-width: 300px
+    height: 100px
+    padding: 8px
+    font-size: 0.8rem
+    font-weight: 900
+    color: #d6b43d
+    text-align: center
+    text-transform: uppercase
+    text-decoration: none
+    position: relative
+    margin: 10px 0
+    border-radius: 20%
+
+    &.white
+      &:hover > p
+        color: #ece8e1
+
+      > p
+        background: #ece8e1
+        color: #0f1923
+
+        span.base
+          border: 1px solid transparent
+
+    
+    p
+      margin: 0
+      height: 54px
+      line-height: 54px
+      box-sizing: border-box
+      z-index: 1
+      left: 0
+      width: 100%
+      position: relative
+      overflow: hidden
+
+      span
+        &.base
+          box-sizing: border-box
+          position: absolute
+          z-index: 2
+          width: 100%
+          height: 100%
+          left: 0
+          border: 1px solid #efc758
+
+         
+
+        &.bg
+          left: -5%
+          position: absolute
+          background: #efc758
+          width: 0
+          height: 100%
+          z-index: 3
+          -webkit-transition: 0.3s ease-out all
+          transition: 0.3s ease-out all
+          -webkit-transform: skewX(-10deg)
+          transform: skewX(-10deg)
+
+        &.text
+          z-index: 4
+          width: 100%
+          height: 100%
+          position: absolute
+          left: 0
+          top: 0
+
+
+    &:hover
+      color: #ece8e1
+
+      span
+        &.bg
+          width: 110%
+
+        &.text:after
+          background: #ece8e1
