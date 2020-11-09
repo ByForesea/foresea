@@ -232,16 +232,16 @@ gsap.to(".scroll",{
                                     trigger: ".box1",
                                      // pin the trigger element while active
                                      start: "bottom 60%", // when the top of the trigger hits the top of the viewport
-                                     end: "+=50px", // end after scrolling 500px beyond the start
-                                    scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                     end: "bottom 65%", // end after scrolling 500px beyond the start
+                                    scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                                     // markers: true,
-                                    toggleActions: "play none none none"
+                                    toggleActions: "play complete reverse reverse"
                                     
                                   },
                                   
                                   x:-1000,
-                                  ease:"none",
-                                  duration:1,
+                                  ease:"Linear.easeInOut",
+                                  duration:3000,
                                 });
 
                                 gsap.to(".big2",{
@@ -251,7 +251,7 @@ gsap.to(".scroll",{
                                          // pin the trigger element while active
                                         start: "bottom 60%", // when the top of the trigger hits the top of the viewport
                                         end: "bottom 65%", // end after scrolling 500px beyond the start
-                                        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                                         // markers: true,
                                         toggleActions: "play none none none"
                                       },
@@ -268,7 +268,7 @@ gsap.to(".scroll",{
                                              // pin the trigger element while active
                                              start: "bottom 70%", // when the top of the trigger hits the top of the viewport
                                              end: "+=50px", // end after scrolling 500px beyond the start
-                                            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                            scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                                             // markers: true,
                                             toggleActions: "play none none none"
                                             
