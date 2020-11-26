@@ -53,17 +53,70 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 580px) {
+  body {
+    background: url(img/01.png);
+    background-attachment: fixed;
+  }
+
   #navbar {
     padding: 20px 10px !important;
   }
   #navbar a {
-    float: none;
-    display: block;
+    float: right;
+    display: inline;
     text-align: left;
+    font-size: 1.2em;
   }
 
   #navbar-right {
     float: none;
+  }
+
+  .foresea {
+    position: absolute;
+    width: 80%;
+    z-index: 99;
+    margin-top: 45%;
+  }
+
+  .whale {
+    position: absolute;
+    width: 180%;
+    left: -25%;
+    top: 0%;
+  }
+
+  .boat {
+    position: absolute;
+    width: 50%;
+    margin-top: 10%;
+    left: 60%;
+    animation: boat2 6s ease-in-out alternate;
+    animation-fill-mode: forwards;
+  }
+
+  #logo {
+    width: 120%;
+    float: left;
+  }
+
+  .allbox {
+    width: 50%;
+  }
+
+  .box1 {
+    flex: 1;
+    position: relative;
+    width: 50%;
+    height: 500px;
+  }
+}
+@keyframes boat2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }
 .main {
