@@ -31,8 +31,8 @@ body::-webkit-scrollbar
   a
     float: left
     color: #fff
-    padding-left: 30px
-    padding-right: 10px
+    padding-left: 15px
+    padding-right: 15px
     text-decoration: none
     font-size: 21px
     line-height: 25px
@@ -45,7 +45,7 @@ body::-webkit-scrollbar
   a
     &:hover
       background-color: transparent
-      color: #aaa
+      color: #e0e0d2
 
 
 #navbar-right
@@ -94,6 +94,7 @@ body::-webkit-scrollbar
   
   .allbox
     width: 50%
+
 
   .box1
     flex: 1
@@ -257,7 +258,7 @@ body::-webkit-scrollbar
 
 .main2
     width: 100vw
-    height: 3000px
+    height: 3500px
     position: relative
     
 
@@ -284,7 +285,7 @@ body::-webkit-scrollbar
   text-shadow: 2px 2px 3px rgba(255,255,255,0.3)
   margin-top: -10%
 
-.title03
+.title03, .title04
   position: absolute
   font-size: 4.5em
   letter-spacing: 14px
@@ -294,7 +295,7 @@ body::-webkit-scrollbar
   margin-top: -10%
 
 
-.intro01, .intro02
+.intro01, .intro02, .intro04
   position: absolute
   font-size: 1.2em
   color:#ecd8a1
@@ -438,6 +439,8 @@ body::-webkit-scrollbar
         &::after 
             opacity: 1
             transition: all 0.5s
+
+
 
 
 
@@ -594,6 +597,52 @@ body::-webkit-scrollbar
   left: -25.5%
   top: -29%
 
+.box4fish
+  position: absolute
+  display: inline
+  left: 55%
+  top: 70%
+  z-index: 150
+
+.box4ship
+  position: absolute
+  display: inline
+  left: 10%
+  top: -10%
+
+.box5cal
+  position: absolute
+  display: inline
+  left: 0%
+  top: -10%
+  z-index: 100
+
+.box5co2
+  position: absolute
+  display: inline
+  left: 10%
+  top: -10%
+  z-index: 150
+  transform: rotate(30deg)
+  animation: fish  2s ease-in-out infinite alternate
+  animation-direction: normal
+  animation-fill-mode: both
+
+
+@keyframes fish
+  0%
+    top: -10%
+  100%
+   top: -8%
+
+.box6trash
+  position: absolute
+  display: inline
+  left: 25%
+  top: 0%
+
+
+
 .main3
     width: 100vw
     height: 100vh
@@ -673,7 +722,7 @@ body::-webkit-scrollbar
 .girl
   position: absolute
   left: 8%
-  top: 55%
+  top: 60%
   z-index: 300
 
 .main4
@@ -722,7 +771,7 @@ h2
 .top-white
   position: absolute
   z-index: 50
-  top: -40%
+  top: -35%
 
 
 .mp1

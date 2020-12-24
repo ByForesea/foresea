@@ -26,10 +26,6 @@ function scrollFunction() {
   }
 }
 
-
-
-
-
   $(function() {
     $(".flexslider").flexslider({
       animation: "slide",
@@ -297,55 +293,93 @@ gsap.to(".scroll",{
                                               duration:1,
                                             });
     
+                                            gsap.to(".big4",{
 
+                                              scrollTrigger: {
+                                                    trigger: ".box4",
+                                                     // pin the trigger element while active
+                                                    start: "bottom 60%", // when the top of the trigger hits the top of the viewport
+                                                    end: "bottom 65%", // end after scrolling 500px beyond the start
+                                                    scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                                    // markers: true,
+                                                    toggleActions: "play none none none"
+                                                  },
+                                                  
+                                                  x:1200,
+                                                  ease:"none",
+                                                  duration:1,
+                                                });
+
+                                                gsap.to(".big5",{
+
+                                                  scrollTrigger: {
+                                                        trigger: ".box5",
+                                                         // pin the trigger element while active
+                                                        start: "bottom 60%", // when the top of the trigger hits the top of the viewport
+                                                        end: "bottom 65%", // end after scrolling 500px beyond the start
+                                                        scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                                        // markers: true,
+                                                        toggleActions: "play none none none"
+                                                      },
+                                                      
+                                                      x:-1200,
+                                                      ease:"none",
+                                                      duration:1,
+                                                    });
+
+                                                    gsap.to(".big6",{
+
+                                                      scrollTrigger: {
+                                                            trigger: ".box6",
+                                                             // pin the trigger element while active
+                                                            start: "bottom 60%", // when the top of the trigger hits the top of the viewport
+                                                            end: "bottom 65%", // end after scrolling 500px beyond the start
+                                                            scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                                            // markers: true,
+                                                            toggleActions: "play none none none"
+                                                          },
+                                                          
+                                                          x:1200,
+                                                          ease:"none",
+                                                          duration:1,
+                                                        });
+
+                                                // gsap.to(".box4fish",{
+
+                                                //   scrollTrigger: {
+                                                //         trigger: ".box4",
+                                                //          // pin the trigger element while active
+                                                //          start: "bottom 60%", // when the top of the trigger hits the top of the viewport
+                                                //         end: "bottom 65%",  // end after scrolling 500px beyond the start
+                                                //         scrub: 0.5, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                                                //         markers: true,
+                                                //         toggleActions: "play none none none"
+                                                        
+                                                //       },
+                                                      
+                                                //       x: -600,
+                                                //       y: -100,
+                                                //       ease:"none",
+                                                //       duration:1,
+                                                //     });
+                                           
                                        
 
-                                //  gsap.to(".net",{
-
-                                //   scrollTrigger: {
-                                //         trigger: ".box2",
-                                //          // pin the trigger element while active
-                                //         start: "bottom 70%", // when the top of the trigger hits the top of the viewport
-                                //         end: "bottom 65%", // end after scrolling 500px beyond the start
-                                //         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                                //         markers: true,
-                                        
-                                //       },
-                                      
-                                //       scale: 0,
-                                //       ease:"none",
-                                //       duration:1,
-                                //     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      // gsap.to(".main4",{
-
-                      //     scrollTrigger: {
-                      //           trigger: ".main4",
-                      //            // pin the trigger element while active
-                      //           start: "bottom 80%", // when the top of the trigger hits the top of the viewport
-                      //           end: "+=550px", // end after scrolling 500px beyond the start
-                      //           scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                      //           markers: true,
                                 
-                      //         },
-                            
-                      //         y:-100,
-                      //         ease:"none",
-                      //         duration:1,
-                      //       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
